@@ -23,9 +23,7 @@ body {
   gap: 30px;
 }
 
-.item1,
-.item2,
-.item3 {
+.item {
   background-color: white;
   border-radius: 15px;
   padding: 20px;
@@ -36,9 +34,7 @@ body {
   cursor: pointer;
 }
 
-.item1:hover,
-.item2:hover,
-.item3:hover {
+.item:hover {
   transform: translateY(-10px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
