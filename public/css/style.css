@@ -1,10 +1,96 @@
-*  {
-    padding: 0%;
-    margin: 0%;
-    box-sizing: border-box;
-    font-family:'Trebuchet MS', sans-serif;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap");
+
 
 body {
-    background-color: rgb(60, 201, 168);
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #ff61d2, #fe9090);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.BigContainer {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+}
+
+.container {
+  display: flex;
+  gap: 30px;
+}
+
+.item1,
+.item2,
+.item3 {
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.item1:hover,
+.item2:hover,
+.item3:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.fa-brands {
+  font-size: 4rem;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.num {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #090909;
+  margin: 10px 0;
+}
+
+.text {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #666;
+  
+}
+
+/* Unique colors for each social media icon */
+.fa-youtube {
+  color: #ff0000;
+}
+.fa-instagram {
+  color: #e4405f;
+}
+.fa-tiktok {
+  color: #000000;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.item1:hover .fa-brands,
+.item2:hover .fa-brands,
+.item3:hover .fa-brands {
+  animation: pulse 0.5s infinite;
+}
+
+
+
