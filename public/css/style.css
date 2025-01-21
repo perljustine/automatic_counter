@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #ff61d2, #fe9090);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.BigContainer {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  display: flex;
+  gap: 30px;
+}
+
+.container {
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  width: 300px;
+}
+
+.container:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.fa-brands {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.num {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #333;
+  margin: 10px 0;
+}
+
+.text {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #666;
+  text-transform: uppercase;
+}
+
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.container:hover .fa-brands {
+  animation: pulse 0.5s infinite;
+}
+
